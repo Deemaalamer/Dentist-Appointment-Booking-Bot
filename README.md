@@ -17,9 +17,12 @@ Now, let's build the conversation!
 4. Click on **Create** to create an instance of the service. Make sure you choose an **organization** and **space**.
 5. Click on **Launch tool** to open the tool.
 
+(gif)
+
 ## Task 2: Create your bot workspace
 1. Click on **(+) Create** to create the wrokspace.
 2. Name your bot 'Dental Appointment Booking Bot'
+(gif)
 
 ## Task 3: Create your intents
 An intent is a group of examples of things that a user might say to communicate a specific goal
@@ -30,12 +33,17 @@ Here we are going to crete two intents. For each intent, we will add examples to
 
 1. Add the first inetent and call it #book_appoitment
 2. Add user examples such as: Book an appointment, Book appointment, Can you pls help me book an appointment, cavity in my tooth, Help me book an appointment, I need to book an appointment immediately, I have a tooth pain, My tooth is aching, I need to book an appointment immediately... etc
+
+(gif)
+
 3. Add the second intent and call it #thanks, this is to detect when the user is thanking the bot.
 4. Add user examples such as: Thank you, Thank you very much, Thanks, Thanks a lot.. etc
 
+(gif)
+
 You can test your intent, by clicking Ask Watson icon in the top, right-hand side of the conversation editor.
 
-## Create your entities
+## Task 4: Create your entities
 Entity is a portion of the user's input that you can use to provide a
 different response to a particular intent. Click Entities. On the Entities page, click Create new.
 
@@ -45,41 +53,52 @@ can be specified in user input. Create entities to represent to the application 
 feature that allows Watson Conversation to accept misspelled words. You can enable this feature
 at the entity level.
 
-1. Add your first entity and call it @personal_details
-2. Enter value **emailid**
-3. Switch synonyms to patterns, and add this regular expression 
-'''<b>^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</b>'''
+1. Under **My entities tab**, add your first entity and call it **@personal_details**.
+2. Enter value **emailid**.
+3. Switch synonyms to patterns, and add this regular expression <b>^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</b> to identify emails.
+4. When you are done adding, click the arrow to save and go back.
 
-to identify emails.
+(gif)
 
-## Build the Dialog 
+5. Add your second entity and call it **@reason_for_visit**.
+6. Add values such as: filling, gum problem, tooth cleaning, toothache etc. Also don't forget to add synonyms.
+
+(gif/image could be enough)
+
+7. Under **System entities**, turn **@sys-time, @sys-date and @sys-number** on. This will allow the bot to detect dates, time and numbers.
+
+(gif)
+
+## Task 5: Build the Dialog
 A dialog is made up of nodes that define steps in the conversation.
+
+(Image of default dialog)
 
 In the previous image, two dialog nodes are shown. The first node is the standard welcome
 message. The other node is a catch-all node named "Anything else." Dialog nodes are chained in
 a tree structure to create an interactive conversation with the user. The evaluation starts at the
 top, so the welcome node is assessed before the "Anything else" node.
 
-In the welcome node choose the intent “welcome” with the response "hey there welcome to
-dental chatbot?" To validate how the flow works, you can click the Ask Watson icon.
+1. Click the welcome node to edit it. This node starts as soon as when the user initiates a conversation with the bot.
+2. In the welcome node, click on **Customize** in the top right corner.
+3. Turn **Multiple responses** on, then click **Apply**.
 
-8-Define Nodes
-The first node addresses greetings in a response to a query such as "hello." Click the welcome
-node and click Add node below
-A new node is added between the welcome and "Anything else" nodes.
+(gif)
 
-After you add the Greeting node, Customize the greeting and make sure the Multiple responses
-tab is on
-
-To let the chatbot welcome the user with good morning and good afternoon add the following
-responses:
-
-The now().before(‘12:00:00’) detects if the conversation is in the morning and triggers good
+4. Now you're going to make your bot detect what time of the day it is and welcome the user accordingly.
+**now().before('12:00:00')** detects if the conversation is in the morning and triggers good
 morning.
-The now().before(‘16:00:00’) detects if the conversation is in the afternoon and triggers good
+
+**now().before('16:00:00')** detects if the conversation is in the evening and triggers good
 afternoon.
-The now().before(‘24:00:00’) detects if the conversation is in the evening and triggers good
-evening.
+
+**now().before('24:00:00')** detects if the conversation is in the evening and triggers good
+afternoon.
+
+So now, for the first slot you can welcome the user by saying 'Good morning & welcome to ABC Dental Clinic. How can I help you?'. For the second slot, you can change it to good afternoon instead. For the last slot, change it to good evening.
+
+(Image)
+
 Add the Book Dentist Appointment node then customize it and make sure the slots is on then
 hit Apply
 
