@@ -69,7 +69,7 @@ at the entity level.
 
 8. Add values such as: filling, gum problem, tooth cleaning, toothache etc. Also don't forget to add synonyms.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot7.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot7.PNG)
 
 9. Under **System entities**, turn **@sys-time, @sys-date and @sys-number** on. This will allow the bot to detect dates, time and numbers.
 
@@ -99,7 +99,7 @@ morning. **now().before('16:00:00')** detects if the conversation is in the even
 afternoon. **now().before('24:00:00')** detects if the conversation is in the evening and triggers good
 evening. So now, for the first slot you can welcome the user by saying 'Good morning & welcome to ABC Dental Clinic. How can I help you?'. For the second slot, you can change it to good afternoon instead. For the last slot, change it to good evening.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot11.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot11.PNG)
 
 ## Task 5.2: Build the dialog
 
@@ -116,11 +116,11 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 8. In the second slot add check for **@sys-number** save as **$mobileNumber**, if not present, ask **Please enter valid mobile number!**
 9. In the second slot add check for **@personal_details:emailid** save as **$emailid**, if not present, ask **Please enter your email id**
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot13.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot13.PNG)
 
 10. Then in the next section add this as the reponse, '**Thank you! Your appointment has been booked for $appointmentDate $appointmentTime with Dr.XYZ. If you have any concerns please reach out to ABC Dental Clinic contact number. Have a good day! :)**'
  
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot14.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot14.PNG)
 
 ## Task 5.3: Build the dialog
 
