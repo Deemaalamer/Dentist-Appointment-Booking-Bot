@@ -17,13 +17,13 @@ Now, let's build the conversation!
 4. Click on **Create** to create an instance of the service. Make sure you choose an **organization** and **space**.
 5. Click on **Launch tool** to open the tool.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot1.gif)
+![xx](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot1.gif)
 
 ## Task 2: Create your bot workspace
 1. Click on **(+) Create** to create the wrokspace.
 2. Name your bot '**Dental Appointment Booking Bot**'
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot2.gif)
+![xx](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot2.gif)
 
 ## Task 3: Create your intents
 An intent is a group of examples of things that a user might say to communicate a specific goal
