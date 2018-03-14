@@ -117,24 +117,29 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 2. Edit condition to *if bot recognizes*: **#thanks**
 3. Add multiple response, such as: You're welcome, my pleasure, anytime, you're looking forward to your appointment.. etc
 
+## Task 6: Train and test your bot
+
+1. Navigate to the '**Try it**' button at the top left corner of the page.
+2. Start typing away to book an appointment and see how your bot responds!
+
+You may even incorporate more details and improve the bot, the floor is yours.
+
 (gif)
 
 ## Optional Task: Link the service to a UI
 
-Web Application Template for Watson Conversation API
-Demonstration
-Requirements:
-1.
-Install Nodejs http://blog.teamtreehouse.com/install-node-js-npm-windows
-Main steps:
-1.
-"Clone or Download" this Repository from this link
-https://github.com/NailahTayyar/WatsonConversation
-2.
-Take note of Watson Conversation Service's Credentials and workspace_id
-3.
-Edit the file app.js and fill the fields: username, and <workspace_id> with the data
+1. If you don't have Install Nodejs http://blog.teamtreehouse.com/install-node-js-npm-windows
+2."Clone or Download" this Repository from this link https://github.com/NailahTayyar/WatsonConversation
+3. Take note of Watson Conversation Service's Credentials and workspace_id
+(img)
+4. Edit the file app.js and fill the fields **username**, **password** and **workspace_id** with the data
 collected in the last step.
+5. Open a terminal and change the directory where you downloaded your code.
+6. Run the code by typeing **node app.js** in the command line.
+(gif)
+7. Navagite to the **http://localhost:3000/** in your broswer to view and test your application
+
+(img)
 
 ## Summary
 
@@ -147,5 +152,6 @@ In this tutorial, you completed these tasks:
 3. Created intents and entities
 4. Built a dialog
 5. Trained and tested a cognitive chatbot
+6. Linked your trained bot to a UI
 
 This tutorial scratches the surface of many of the capabilities of IBM Watson Conversation.
