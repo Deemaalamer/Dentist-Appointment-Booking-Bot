@@ -47,7 +47,10 @@ at the entity level.
 
 1. Add your first entity and call it @personal_details
 2. Enter value **emailid**
-3. Switch synonyms to patterns, and add this regular expression ''' ^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$ ''' to identify emails.
+3. Switch synonyms to patterns, and add this regular expression 
+'''<b>^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</b>'''
+
+to identify emails.
 
 ## Build the Dialog 
 A dialog is made up of nodes that define steps in the conversation.
