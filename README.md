@@ -17,7 +17,7 @@ Now, let's build the conversation!
 4. Click on **Create** to create an instance of the service. Make sure you choose an **organization** and **space**.
 5. Click on **Launch tool** to open the tool.
 
-![xx](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot1.gif)
+![Login](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot1.gif)
 
 ## Task 2: Create your bot workspace
 1. Click on **(+) Create** to create the wrokspace.
