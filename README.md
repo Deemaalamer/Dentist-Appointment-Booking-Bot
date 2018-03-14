@@ -17,13 +17,13 @@ Now, let's build the conversation!
 4. Click on **Create** to create an instance of the service. Make sure you choose an **organization** and **space**.
 5. Click on **Launch tool** to open the tool.
 
-![Login](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot1.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot1.gif)
 
 ## Task 2: Create your bot workspace
 1. Click on **(+) Create** to create the wrokspace.
 2. Name your bot '**Dental Appointment Booking Bot**'
 
-![xx](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot2.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot2.gif)
 
 ## Task 3: Create your intents
 An intent is a group of examples of things that a user might say to communicate a specific goal
@@ -36,13 +36,13 @@ Here we are going to crete two intents. For each intent, we will add examples to
 2. Click **Create** to create the intent.
 3. Add user examples such as: Book an appointment, Book appointment, Can you pls help me book an appointment, cavity in my tooth, Help me book an appointment, I need to book an appointment immediately, I have a tooth pain, My tooth is aching, I need to book an appointment immediately... etc
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot3.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot3.gif)
 
 4. Add the second intent and call it **#thanks**, this is to detect when the user is thanking the bot.
 5. Click **Create** to create the intent.
 6. Add user examples such as: Thank you, Thank you very much, Thanks, Thanks a lot.. etc
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot4.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot4.gif)
 
 ## Task 4: Create your entities
 Entity is a portion of the user's input that you can use to provide a
@@ -60,27 +60,27 @@ at the entity level.
 4. Switch synonyms to patterns, and add this regular expression <b>^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$</b> to identify emails.
 5. When you are done adding, click the arrow to save and go back.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot5.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot5.gif)
 
 6. Add your second entity and call it **@reason_for_visit**.
 7. Click **Create** to create the entity.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot6.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot6.gif)
 
 8. Add values such as: filling, gum problem, tooth cleaning, toothache etc. Also don't forget to add synonyms.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot7.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot7.png)
 
 9. Under **System entities**, turn **@sys-time, @sys-date and @sys-number** on. This will allow the bot to detect dates, time and numbers.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot8.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot8.gif)
 
 ## Task 5.1: Build the dialog
 A dialog is made up of nodes that define steps in the conversation.
 
 1. Click on dialog tab, then Click on **Create** to create twi default nodes.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot9.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot9.gif)
 
 In the previous image, two dialog nodes are created. The first node is the standard welcome
 message. The other node is a catch-all node named "Anything else." Dialog nodes are chained in
@@ -91,7 +91,7 @@ top, so the welcome node is assessed before the "Anything else" node.
 3. In the Welcome node, click on **Customize** in the top right corner.
 4. Turn **Multiple responses** on, then click **Apply**.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot10.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot10.gif)
 
 5. Now you're going to make your bot detect what time of the day it is and welcome the user accordingly.
 **now().before('12:00:00')** detects if the conversation is in the morning and triggers good
@@ -99,7 +99,7 @@ morning. **now().before('16:00:00')** detects if the conversation is in the even
 afternoon. **now().before('24:00:00')** detects if the conversation is in the evening and triggers good
 evening. So now, for the first slot you can welcome the user by saying 'Good morning & welcome to ABC Dental Clinic. How can I help you?'. For the second slot, you can change it to good afternoon instead. For the last slot, change it to good evening.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot11.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot11.png)
 
 ## Task 5.2: Build the dialog
 
@@ -108,7 +108,7 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 3. In the Book dental appointment node, click on **Customize** in the top right corner.
 4. Turn **Slots** on, then click **Apply**.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot12.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot12.gif)
 
 5. In the first slot add check for **@sys-date** save as **$appointmentDate**, if not present, ask **Please enter preferred appointment date**
 6. In the second slot add check for **@sys-time** save as **$appointmentTime**, if not present, ask **Please enter preferred appointment time**
@@ -116,11 +116,11 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 8. In the second slot add check for **@sys-number** save as **$mobileNumber**, if not present, ask **Please enter valid mobile number!**
 9. In the second slot add check for **@personal_details:emailid** save as **$emailid**, if not present, ask **Please enter your email id**
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot13.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot13.png)
 
 10. Then in the next section add this as the reponse, '**Thank you! Your appointment has been booked for $appointmentDate $appointmentTime with Dr.XYZ. If you have any concerns please reach out to ABC Dental Clinic contact number. Have a good day! :)**'
  
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot14.png)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot14.png)
 
 ## Task 5.3: Build the dialog
 
@@ -128,7 +128,7 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 2. Edit condition to *if bot recognizes*: **#thanks**
 3. Add multiple response, such as: You're welcome, my pleasure, anytime, you're looking forward to your appointment.. etc
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot15.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot15.gif)
 
 ## Task 6: Train and test your bot
 
@@ -137,7 +137,7 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 
 You may even incorporate more details and improve the bot, the floor is yours.
 
-![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/tree/master/images/bot16.gif)
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot16.gif)
 
 
 ## Optional Task: Link the service to a UI
