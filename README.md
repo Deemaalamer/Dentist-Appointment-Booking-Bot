@@ -69,7 +69,7 @@ at the entity level.
 
 (gif)
 
-## Task 5: Build the Dialog
+## Task 5.1: Build the Dialog
 A dialog is made up of nodes that define steps in the conversation.
 
 (Image of default dialog)
@@ -87,19 +87,15 @@ top, so the welcome node is assessed before the "Anything else" node.
 
 4. Now you're going to make your bot detect what time of the day it is and welcome the user accordingly.
 **now().before('12:00:00')** detects if the conversation is in the morning and triggers good
-morning.
-
-**now().before('16:00:00')** detects if the conversation is in the evening and triggers good
-afternoon.
-
-**now().before('24:00:00')** detects if the conversation is in the evening and triggers good
-afternoon.
-
-So now, for the first slot you can welcome the user by saying 'Good morning & welcome to ABC Dental Clinic. How can I help you?'. For the second slot, you can change it to good afternoon instead. For the last slot, change it to good evening.
+morning. **now().before('16:00:00')** detects if the conversation is in the evening and triggers good
+afternoon. **now().before('24:00:00')** detects if the conversation is in the evening and triggers good
+evening. So now, for the first slot you can welcome the user by saying 'Good morning & welcome to ABC Dental Clinic. How can I help you?'. For the second slot, you can change it to good afternoon instead. For the last slot, change it to good evening.
 
 (Image)
 
-Add the Book Dentist Appointment node then customize it and make sure the slots is on then
+## Task 5.2: Build the Dialog
+
+1. Add your second node and call it the Book Dentist Appointment node then customize it and make sure the slots is on then
 hit Apply
 
 Add the responses below, The @sys-date entity is defined by the system to detect the date in the
