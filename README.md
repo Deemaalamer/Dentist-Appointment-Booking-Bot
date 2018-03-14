@@ -80,7 +80,7 @@ a tree structure to create an interactive conversation with the user. The evalua
 top, so the welcome node is assessed before the "Anything else" node.
 
 1. Click the welcome node to edit it. This node starts as soon as when the user initiates a conversation with the bot.
-2. In the welcome node, click on **Customize** in the top right corner.
+2. In the Welcome node, click on **Customize** in the top right corner.
 3. Turn **Multiple responses** on, then click **Apply**.
 
 (gif)
@@ -95,15 +95,31 @@ evening. So now, for the first slot you can welcome the user by saying 'Good mor
 
 ## Task 5.2: Build the Dialog
 
-1. Add your second node and call it the Book Dentist Appointment node then customize it and make sure the slots is on then
-hit Apply
+1. Add your second node below the 'Welcome' node, and call it 'Book dental appointment'.
+2. Edit condition to *if bot recognizes*: **#book_appointment**.
+3. In the Book dental appointment node, click on **Customize** in the top right corner.
+4. Turn **Slots** on, then click **Apply**.
 
-Add the responses below, The @sys-date entity is defined by the system to detect the date in the
-conversation and it will save it in the $appointmentDate intent. In the “If not response,ask” tab
-add the response “please enter preferred appointment Date”.
+(gif)
 
+5. In the first slot add check for **@sys-date** save as **$appointmentDate**, if not present, ask **Please enter preferred appointment date**
+6. In the second slot add check for **@sys-time** save as **$appointmentTime**, if not present, ask **Please enter preferred appointment time**
+7. In the second slot add check for **@reason_for_visit** save as **$reasonForVisit**, if not present, ask **Please enter reason for appointment/visit**
+8. In the second slot add check for **@sys-number** save as **$mobileNumber**, if not present, ask **Please enter valid mobile number!**
+9. In the second slot add check for **@personal_details:emailid** save as **$emailid**, if not present, ask **Please enter your email id**
+10 Then in the next section add this as the reponse, '**Thank you! Your appointment has been booked for $appointmentDate $appointmentTime with Dr.XYZ. If you have any concerns please reach out to ABC Dental Clinic contact number. Have a good day! :)**'
+ 
+(img)
 
+## Task 5.3: Build the Dialog
 
+1. Add your third node below the 'dental appointment' node, and call it 'Thank you'. This node is used to responded to user when he/she is thankful.
+2. Edit condition to *if bot recognizes*: **#thanks**
+3. Add multiple response, such as: You're welcome, my pleasure, anytime, you're looking forward to your appointment.. etc
+
+(gif)
+
+## Optional Task: Link the service to a UI
 
 Web Application Template for Watson Conversation API
 Demonstration
@@ -119,3 +135,17 @@ Take note of Watson Conversation Service's Credentials and workspace_id
 3.
 Edit the file app.js and fill the fields: username, and <workspace_id> with the data
 collected in the last step.
+
+## Summary
+
+You completed the tutorial. **Congratulations!**
+
+In this tutorial, you completed these tasks:
+
+1. Created a Watson conversation service.
+2. Created a workspace
+3. Created intents and entities
+4. Built a dialog
+5. Trained and tested a cognitive chatbot
+
+This tutorial scratches the surface of many of the capabilities of IBM Watson Conversation.
