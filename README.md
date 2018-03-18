@@ -143,17 +143,13 @@ You may even incorporate more details and improve the bot, the floor is yours.
 ## Optional Task: Link the service to a UI
 
 1. If you don't have Install Nodejs http://blog.teamtreehouse.com/install-node-js-npm-windows
-2."Clone or Download" this Repository from this link https://github.com/NailahTayyar/WatsonConversation
-3. Take note of Watson Conversation Service's Credentials and workspace_id
-(img)
-4. Edit the file app.js and fill the fields **username**, **password** and **workspace_id** with the data
+2. **"Clone or Download** the repository from this link https://github.com/NailahTayyar/WatsonConversation
+3. Take note of Watson Conversation Service's **Credentials** and **workspace id**
+4. Edit the file **app.js** and fill the fields **username**, **password** and **workspace_id** with the data
 collected in the last step.
-5. Open a terminal and change the directory where you downloaded your code.
+5. Open a terminal/console and change the directory where you downloaded your code.
 6. Run the code by typeing **node app.js** in the command line.
-(gif)
 7. Navagite to the **http://localhost:3000/** in your broswer to view and test your application
-
-(img)
 
 ## Summary
 
