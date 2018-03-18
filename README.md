@@ -151,6 +151,8 @@ collected in the last step.
 6. Run the code by typeing **node app.js** in the command line.
 7. Navagite to the **http://localhost:3000/** in your broswer to view and test your application
 
+![](https://github.com/Deemaalamer/Dentist-Appointment-Booking-Bot/blob/master/images/bot17.png)
+
 ## Summary
 
 You completed the tutorial. **Congratulations!**
